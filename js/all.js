@@ -1,7 +1,8 @@
 const lunchBtn=document.querySelector('.lunchBtn');
 const lunchItems=['鴨肉飯','雞肉飯','冷麵','黑輪米血','農會麵攤','美濃粄條',];
 const lunchItemsLength=lunchItems.length;
-function RadomLunch(){
+function RadomLunch(e){
+    e.preventDefault();
     // alert(lunchItemsLength);
     function randomNumber(){
         return  lunchItems[Math.floor(Math.random()*lunchItemsLength)];
